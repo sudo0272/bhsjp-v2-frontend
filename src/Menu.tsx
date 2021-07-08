@@ -51,16 +51,15 @@ const Menu = () => {
       className="container"
     >
       <div
-        id="site-container"
-        className="container flex-column"
+        className="menu-container container flex-column"
       >
         <span
-          id="current-site"
+          className="selected-menu"
         >
           {target}
         </span>
         <ul
-          id="other-site-container"
+          className="unselected-menu-container"
         >
           {sites
             .filter(site => site !== target)
@@ -80,7 +79,7 @@ const Menu = () => {
         </ul>
       </div>
       <div
-        id="menu-container"
+        id="site-menu-container"
       >
         <ul
           className="container"
