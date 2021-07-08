@@ -1,0 +1,60 @@
+#top-bar {
+  background-color: #5d5c61;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+#site-container {
+  padding: 0 30px;
+  flex-grow: 0;
+  align-items: flex-start;
+  line-height: 50px;
+  justify-content: flex-start;
+}
+
+#site-container:hover #other-site-container {
+  min-height: 200px;
+  transition: min-height .3s ease-in;
+}
+
+#site-container a {
+  color: #5d5c61;
+  text-decoration: none;
+}
+
+#current-site {
+  margin-left: 15px;
+}
+
+#other-site-container {
+  min-height: 0;
+  transition: min-height .2s ease-out;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0 15px;
+  margin: 0;
+  background-color: white;
+}
+
+#menu-container {
+  margin-right: 30px;
+}
+
+#menu-container > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu-container > ul > li {
+  list-style-type: none;
+  padding: 5px 20px;
+  border-right: 2px solid white;
+}
+
+#menu-container > ul > li:first-child {
+  border-left: 2px solid white;
+}
+

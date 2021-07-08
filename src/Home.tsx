@@ -1,21 +1,18 @@
-import { Component } from 'react'
 import './Home.css'
 import './master.css'
 
-class Home extends Component {
-  render() {
-    return (
+const Home = () => {
+  return (
+    <div
+      className="container"
+    >
       <div
-        className="container"
+        className="title"
       >
-        <div
-          className="title"
-        >
-          BHSJP
-        </div>
+        BHSJP
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Home

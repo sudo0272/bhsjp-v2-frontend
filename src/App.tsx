@@ -1,19 +1,27 @@
-import React, { Component } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Route,
+  Switch
+} from 'react-router-dom'
 import Home from './Home'
+import Menu from './Menu'
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  return (
+    <div>
       <BrowserRouter>
-        <Route
-          path="/"
-          exact={true}
-          component={Home}
-        />
+        <Menu />
+
+        <Switch>
+          <Route
+            path="/home"
+            exact={true}
+            component={Home}
+          />
+        </Switch>
       </BrowserRouter>
-    )
-  }
+    </div>
+  )
 }
 
 export default App
