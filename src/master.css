@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+HK&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&family=Noto+Sans+TC&display=swap');
+
 .container {
   display: flex;
   flex: 1;
@@ -13,5 +15,9 @@
 
 .flex-column {
   flex-direction: column;
+}
+
+* {
+  font-family: Noto Sans, Noto Sans KR, Noto Sans JP, Noto Sans HK, Noto Sans TC, Noto Sans SC;
 }
 
