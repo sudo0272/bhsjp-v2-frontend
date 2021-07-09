@@ -30,6 +30,12 @@
   align-items: center;
 }
 
+#site-select-menu-container > span,
+#site-menu-container > ul > li,
+#language-menu-container > span {
+  cursor: pointer;
+}
+
 #site-select-menu-container:hover > ul,
 #language-menu-container:hover > ul {
   transition: height .3s ease-in;
