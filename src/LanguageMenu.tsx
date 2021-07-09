@@ -5,7 +5,7 @@ import { useCookies } from 'react-cookie'
 
 const LanguageMenu = () => {
   let languages = languageNames
-  const [cookies, setCookie] = useCookies(['language'])
+  const [, setCookie] = useCookies(['language'])
 
   languages.sort((a, b) => a[1] < b[1] ? -1 : a[1] === b[1] ? 0 : 1)
 
