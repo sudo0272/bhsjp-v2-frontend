@@ -77,6 +77,10 @@
   right: 30px;
 }
 
+#site-menu-container {
+  min-width: 2px;
+}
+
 #site-menu-container > ul {
   margin: 0;
   padding: 0;
@@ -85,10 +89,6 @@
 #site-menu-container > ul > li {
   list-style-type: none;
   padding: 5px 20px;
-  border-right: 2px solid white;
-}
-
-#site-menu-container > ul > li:first-child {
-  border-left: 2px solid white;
+  line-height: 7px;
 }
 

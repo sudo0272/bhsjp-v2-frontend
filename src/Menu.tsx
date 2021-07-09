@@ -10,6 +10,7 @@ import './Menu.css'
 import './i18nConfig'
 import { useTranslation } from 'react-i18next'
 import LanguageMenu from './LanguageMenu'
+import MenuHorizontalSeparator from './MenuHorizontalSeparator'
 
 const Menu = () => {
   const [target, setTarget] = useState('')
@@ -74,8 +75,7 @@ const Menu = () => {
                   to={'/' + site}
                   key={siteIndex}
                 >
-                  <li
-                  >
+                  <li>
                     {t(`sites.${site}.name`)}
                   </li>
                 </Link>
@@ -96,13 +96,17 @@ const Menu = () => {
           >
             {menus.map((menu, menuIndex) => {
               return (
-                <li
-                  key={menuIndex}
-                >
-                  {t(`sites.${target}.submenus.${menu}`)}
-                </li>
+                <>
+                  <MenuHorizontalSeparator />
+                  <li
+                    key={menuIndex}
+                  >
+                    {t(`sites.${target}.submenus.${menu}`)}
+                  </li>
+                </>
               )
             })}
+            <MenuHorizontalSeparator />
           </ul>
         </div>
         <LanguageMenu />
