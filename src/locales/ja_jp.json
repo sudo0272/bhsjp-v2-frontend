@@ -1,0 +1,43 @@
+{
+  "languages": {
+    "en": "英語",
+    "en-us": "アメリカ英語",
+    "en-ca": "カナダ英語",
+    "ko": "韓国語",
+    "ko-kr": "韓国語",
+    "ko-kp": "朝鮮語",
+    "ja": "日本語",
+    "ja-jp": "日本語"
+  },
+  "sites": {
+    "home": {
+      "name": "ホーム",
+      "submenus": {
+        "hi": "はい",
+        "www": "っ"
+      },
+      "welcome": "ばはさざぱ"
+    },
+    "community": {
+      "name": "コミュニティー",
+      "submenus": [
+      ]
+    },
+    "profile": {
+      "name": "プロフィール",
+      "submenus": [
+      ]
+    },
+    "account": {
+      "name": "勘定",
+      "submenus": [
+      ]
+    },
+    "about": {
+      "name": "疎開",
+      "submenus": [
+      ]
+    }
+  }
+}
+

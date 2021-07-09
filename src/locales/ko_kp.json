@@ -1,0 +1,43 @@
+{
+  "languages": {
+    "en": "영어",
+    "en-us": "미국 영어",
+    "en-ca": "카나다 영어",
+    "ko": "조선말",
+    "ko-kr": "남조선말",
+    "ko-kp": "조선말",
+    "ja": "일본어",
+    "ja-jp": "일본어"
+  },
+  "sites": {
+    "home": {
+      "name": "집",
+      "submenus": {
+        "hi": "ㅎㅇ",
+        "www": "ㅈㅈ"
+      },
+      "welcome": "ㅂㅎㅅㅈㅍ"
+    },
+    "community": {
+      "name": "게시판",
+      "submenus": [
+      ]
+    },
+    "profile": {
+      "name": "얼굴",
+      "submenus": [
+      ]
+    },
+    "account": {
+      "name": "계정",
+      "submenus": [
+      ]
+    },
+    "about": {
+      "name": "소개",
+      "submenus": [
+      ]
+    }
+  }
+}
+

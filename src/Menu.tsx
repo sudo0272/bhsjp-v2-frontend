@@ -7,12 +7,16 @@ import {
   Link
 } from 'react-router-dom'
 import './Menu.css'
+import './i18nConfig'
+import { useTranslation } from 'react-i18next'
+import LanguageMenu from './LanguageMenu'
 
 const Menu = () => {
   const [target, setTarget] = useState('')
   const location = useLocation()
   const [menus, setMenus] = useState([''])
   let [sites, setSites] = useState([''])
+  const { t } = useTranslation()
 
   useEffect(() => {
     const path = location.pathname
@@ -20,8 +24,6 @@ const Menu = () => {
   }, [location])
 
   useEffect(() => {
-    console.log(`target: "${target}"`)
-
     const sitesExceptTarget = [
       'home',
       'community',
@@ -51,49 +53,59 @@ const Menu = () => {
       className="container"
     >
       <div
-        className="menu-container container flex-column"
+        id="left-menu-container"
+        className="container"
       >
-        <span
-          className="selected-menu"
+        <div
+          id="site-select-menu-container"
+          className="container flex-column"
         >
-          {target}
-        </span>
-        <ul
-          className="unselected-menu-container"
-        >
-          {sites
-            .filter(site => site !== target)
-            .map((site, siteIndex) => {
-            return (
-              <Link
-                to={'/' + site}
-                key={siteIndex}
-              >
-                <li
+          <span
+            id="selected-site-select-menu"
+          >
+            {t(`sites.${target}.name`)}
+          </span>
+          <ul>
+            {sites
+              .filter(site => site !== target)
+              .map((site, siteIndex) => {
+              return (
+                <Link
+                  to={'/' + site}
+                  key={siteIndex}
                 >
-                  {site}
-                </li>
-              </Link>
-            )
-          })}
-        </ul>
+                  <li
+                  >
+                    {t(`sites.${site}.name`)}
+                  </li>
+                </Link>
+              )
+            })}
+          </ul>
+        </div>
       </div>
       <div
-        id="site-menu-container"
+        id="right-menu-container"
+        className="container"
       >
-        <ul
-          className="container"
+        <div
+          id="site-menu-container"
         >
-          {menus.map((menu, menuIndex) => {
-            return (
-              <li
-                key={menuIndex}
-              >
-                {menu}
-              </li>
-            )
-          })}
-        </ul>
+          <ul
+            className="container"
+          >
+            {menus.map((menu, menuIndex) => {
+              return (
+                <li
+                  key={menuIndex}
+                >
+                  {t(`sites.${target}.submenus.${menu}`)}
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+        <LanguageMenu />
       </div>
     </div>
   )

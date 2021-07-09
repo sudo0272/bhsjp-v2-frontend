@@ -1,7 +1,11 @@
 import './Home.css'
 import './master.css'
+import './i18nConfig'
+import { useTranslation } from 'react-i18next'
 
 const Home = () => {
+  const { t } = useTranslation()
+
   return (
     <div
       className="container"
@@ -9,7 +13,7 @@ const Home = () => {
       <div
         className="title"
       >
-        BHSJP
+        {t(`sites.home.welcome`)}
       </div>
     </div>
   )

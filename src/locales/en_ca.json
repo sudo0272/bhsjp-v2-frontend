@@ -1,0 +1,43 @@
+{
+  "languages": {
+    "en": "English",
+    "en-us": "American English",
+    "en-ca": "Canadian English",
+    "ko": "Korean",
+    "ko-kr": "South Korean",
+    "ko-kp": "North Korean",
+    "ja": "Japanese",
+    "ja-jp": "Japanese"
+  },
+  "sites": {
+    "home": {
+      "name": "Home",
+      "submenus": {
+        "hi": "hi",
+        "www": "ww"
+      },
+      "welcome": "BHSJP"
+    },
+    "community": {
+      "name": "Community",
+      "submenus": [
+      ]
+    },
+    "profile": {
+      "name": "Profile",
+      "submenus": [
+      ]
+    },
+    "account": {
+      "name": "Account",
+      "submenus": [
+      ]
+    },
+    "about": {
+      "name": "About",
+      "submenus": [
+      ]
+    }
+  }
+}
+

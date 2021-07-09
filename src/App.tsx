@@ -5,10 +5,11 @@ import {
 } from 'react-router-dom'
 import Home from './Home'
 import Menu from './Menu'
+import { CookiesProvider } from 'react-cookie'
 
 const App = () => {
   return (
-    <div>
+    <CookiesProvider>
       <BrowserRouter>
         <Menu />
 
@@ -20,7 +21,7 @@ const App = () => {
           />
         </Switch>
       </BrowserRouter>
-    </div>
+    </CookiesProvider>
   )
 }
 
