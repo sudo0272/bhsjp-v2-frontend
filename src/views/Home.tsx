@@ -1,6 +1,6 @@
 import './Home.css'
 import './master.css'
-import './i18nConfig'
+import '../controllers/i18nConfig'
 import { useTranslation } from 'react-i18next'
 
 const Home = () => {

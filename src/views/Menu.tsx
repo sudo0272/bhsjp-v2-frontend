@@ -8,7 +8,7 @@ import {
   Link
 } from 'react-router-dom'
 import './Menu.css'
-import './i18nConfig'
+import '../controllers/i18nConfig'
 import { useTranslation } from 'react-i18next'
 import LanguageMenu from './LanguageMenu'
 import MenuHorizontalSeparator from './MenuHorizontalSeparator'

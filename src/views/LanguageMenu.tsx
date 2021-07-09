@@ -1,5 +1,5 @@
 import { MdLanguage } from 'react-icons/md'
-import languageNames from './locales/languageConfig.json'
+import languageNames from '../models/locales/languageConfig.json'
 import i18next from 'i18next'
 import { useCookies } from 'react-cookie'
 
