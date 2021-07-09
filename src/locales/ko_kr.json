@@ -14,10 +14,8 @@
     "home": {
       "name": "홈",
       "submenus": {
-        "hi": "ㅎㅇ",
-        "www": "ㅈㅈ"
       },
-      "welcome": "ㅂㅎㅅㅈㅍ"
+      "welcome": "ㅂㅎㅅㅈㅍ에 오신 것을 환영합니다"
     },
     "community": {
       "name": "커뮤니티",

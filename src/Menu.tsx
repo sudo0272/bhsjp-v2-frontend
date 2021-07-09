@@ -38,10 +38,7 @@ const Menu = () => {
 
     switch (target) {
       case 'home':
-        setMenus([
-          'hi',
-          'www'
-        ])
+        setMenus([])
 
         break
 

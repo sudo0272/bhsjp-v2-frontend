@@ -14,10 +14,8 @@
     "home": {
       "name": "Home",
       "submenus": {
-        "hi": "hi",
-        "www": "ww"
       },
-      "welcome": "BHSJP"
+      "welcome": "Welcome to BHSJP"
     },
     "community": {
       "name": "Community",
