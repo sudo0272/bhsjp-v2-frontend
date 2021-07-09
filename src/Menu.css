@@ -5,6 +5,7 @@
   height: 50px;
   padding: 0;
   justify-content: space-between;
+  user-select: none;
 }
 
 #left-menu-container {
