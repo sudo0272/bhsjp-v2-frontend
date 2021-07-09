@@ -1,7 +1,8 @@
 import {
   BrowserRouter,
   Route,
-  Switch
+  Switch,
+  Redirect
 } from 'react-router-dom'
 import Home from './Home'
 import Menu from './Menu'
@@ -15,8 +16,15 @@ const App = () => {
 
         <Switch>
           <Route
+            path="/"
+            exact
+          >
+            <Redirect
+              to="/home"
+            />
+          </Route>
+          <Route
             path="/home"
-            exact={true}
             component={Home}
           />
         </Switch>
