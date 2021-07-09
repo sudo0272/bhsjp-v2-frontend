@@ -1,6 +1,7 @@
 import {
   useEffect,
-  useState
+  useState,
+  Fragment
 } from 'react'
 import {
   useLocation,
@@ -96,14 +97,14 @@ const Menu = () => {
           >
             {menus.map((menu, menuIndex) => {
               return (
-                <>
+                <Fragment
+                  key={menuIndex}
+                >
                   <MenuHorizontalSeparator />
-                  <li
-                    key={menuIndex}
-                  >
+                  <li>
                     {t(`sites.${target}.submenus.${menu}`)}
                   </li>
-                </>
+                </Fragment>
               )
             })}
             <MenuHorizontalSeparator />
