@@ -18,7 +18,7 @@ const Menu = () => {
   const location = useLocation()
   const [menus, setMenus] = useState([''])
   let [sites, setSites] = useState([''])
-  const { t } = useTranslation()
+  const [ t ] = useTranslation()
 
   useEffect(() => {
     const path = location.pathname
@@ -49,6 +49,10 @@ const Menu = () => {
         setMenus([])
     }
   }, [target])
+
+  useEffect(() => {
+    document.title = t(`sites.${target}.name`) + " | " + t(`name`)
+  }, [t, target])
 
   return (
     <div id="top-bar"
